@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f0e8">
+  <meta name="description" content="A celebration of love. Join Rosine and Leonard for their wedding in Kigali, Rwanda.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rosine & Leonard | A Wedding Invitation">
+  <meta property="og:description" content="Two hearts, one love, one beautiful journey. Join us in Kigali.">
+  <meta property="og:image" content="image1.jpg">
+  <meta property="og:url" content="">
+  <title>Rosine & Leonard | A Wedding Invitation</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to invitation</a>
+  <section class="intro" id="intro" aria-label="Opening invitation">
+    <img class="intro__image" src="image1.jpg" alt="Rosine and Leonard sharing a joyful embrace" fetchpriority="high">
+    <div class="intro__veil"></div>
+    <div class="intro__content">
+      <p class="eyebrow intro__eyebrow" id="intro-kicker">WITH FULL HEARTS</p>
+      <h1 class="intro__names" id="intro-names">Rosine <span>&</span> Leonard</h1>
+      <p class="intro__date" id="intro-date">12 June 2027 · Kigali, Rwanda</p>
+      <p class="intro__message" id="intro-message">Two hearts, one love, one beautiful journey.</p>
+      <button class="button button--light" id="open-invitation" type="button">Open invitation <span aria-hidden="true">↗</span></button>
+    </div>
+    <button class="intro__skip" id="skip-intro" type="button">Skip introduction <span aria-hidden="true">↓</span></button>
+    <p class="intro__monogram" aria-hidden="true">R <span>·</span> L</p>
+  </section>
+
+  <header class="site-header" id="site-header">
+    <a class="wordmark" href="#home" aria-label="Rosine and Leonard, home"><span id="header-names">R & L</span><small>12 · 06 · 27</small></a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="#story">Our story</a><a href="#celebration">The celebration</a><a href="#gallery">Gallery</a><a class="nav-rsvp" href="#rsvp">RSVP <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <img class="hero__image" src="image1.jpg" alt="Rosine and Leonard together" fetchpriority="high">
+      <div class="hero__shade"></div>
+      <div class="hero__content reveal">
+        <p class="eyebrow hero__eyebrow" id="hero-kicker">THE BEGINNING OF ALWAYS</p>
+        <h2 id="hero-title">Rosine <span>&</span> Leonard</h2>
+        <p class="hero__date" id="hero-date">12 June 2027 <span>·</span> Kigali, Rwanda</p>
+        <p class="hero__line">A day made more beautiful because you are part of it.</p>
+      </div>
+      <a class="scroll-cue" href="#welcome"><span>SCROLL TO EXPLORE</span><i aria-hidden="true"></i></a>
+      <p class="hero__index" aria-hidden="true">01 — OUR DAY</p>
+    </section>
+
+    <section class="welcome section-pad" id="welcome">
+      <p class="eyebrow reveal">A NOTE FROM US</p>
+      <h2 class="welcome__heading reveal">Some things are better<br>when <em>shared.</em></h2>
+      <p class="welcome__copy reveal" id="invitation-message">With full hearts and so much joy, we invite you to celebrate the beginning of our forever. Your presence would mean the world to us.</p>
+      <div class="welcome__rule" aria-hidden="true"><span>✳</span></div>
+    </section>
+
+    <section class="story section-pad" id="story">
+      <div class="story__intro reveal">
+        <p class="eyebrow">A LOVE, IN LITTLE MOMENTS</p>
+        <h2>It was always<br><em>leading here.</em></h2>
+        <p>Every great love has its own small beginnings. These are a few of ours.</p>
+      </div>
+      <div class="story__entries" id="story-entries" aria-label="Our story timeline"></div>
+      <figure class="story__photo reveal">
+        <img src="image1.jpg" alt="Rosine and Leonard sharing a joyful embrace" loading="lazy">
+        <figcaption>A little more us, every day.</figcaption>
+      </figure>
+    </section>
+
+    <section class="countdown-section" aria-labelledby="countdown-title">
+      <img class="countdown-section__image" src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=2000&q=85" alt="Soft morning light over a quiet landscape" loading="lazy">
+      <div class="countdown-section__overlay"></div>
+      <div class="countdown-section__content reveal">
+        <p class="eyebrow">THE DAY WE SAY I DO</p>
+        <h2 id="countdown-title">Counting down to <em>forever.</em></h2>
+        <div class="countdown" id="countdown" aria-live="off">
+          <div><span id="count-days">—</span><small>Days</small></div><i aria-hidden="true"></i>
+          <div><span id="count-hours">—</span><small>Hours</small></div><i aria-hidden="true"></i>
+          <div><span id="count-minutes">—</span><small>Minutes</small></div><i aria-hidden="true"></i>
+          <div><span id="count-seconds">—</span><small>Seconds</small></div>
+        </div>
+        <p class="countdown__message" id="countdown-message" role="status">Our favorite day is on its way.</p>
+        <p class="countdown__timezone" id="countdown-timezone">Kigali time · CAT (UTC+2)</p>
+      </div>
+    </section>
+
+    <section class="celebration section-pad" id="celebration">
+      <div class="celebration__heading reveal"><p class="eyebrow">SAVE THE DATE</p><h2>Meet us <em>there.</em></h2><p class="celebration__intro" id="event-invitation">We would be honored to have you with us as we begin our next chapter.</p></div>
+      <div class="event-grid">
+        <article class="event-card reveal"><span class="event-card__number">01</span><p class="eyebrow">THE CEREMONY</p><h3 id="ceremony-name">The garden vows</h3><p class="event-card__date" id="ceremony-date">Saturday, 12 June 2027 · 3:00 PM</p><p class="event-card__venue" id="ceremony-venue">Virunga Garden, Kigali</p><p class="event-card__address" id="ceremony-address">KG 9 Avenue, Kigali, Rwanda</p><a class="text-link" id="ceremony-map" href="https://maps.google.com" target="_blank" rel="noreferrer">Open in Google Maps <span aria-hidden="true">↗</span></a></article>
+        <article class="event-card reveal"><span class="event-card__number">02</span><p class="eyebrow">DINNER & DANCING</p><h3 id="reception-name">The celebration</h3><p class="event-card__date" id="reception-date">Saturday, 12 June 2027 · 6:00 PM</p><p class="event-card__venue" id="reception-venue">Virunga Garden, Kigali</p><p class="event-card__address" id="reception-address">KG 9 Avenue, Kigali, Rwanda</p><a class="text-link" id="reception-map" href="https://maps.google.com" target="_blank" rel="noreferrer">Open in Google Maps <span aria-hidden="true">↗</span></a></article>
+      </div>
+      <div class="celebration__details reveal"><div><span class="eyebrow">DRESS WITH US</span><p id="dress-code">Garden formal · A touch of champagne, if you wish</p></div><div><span class="eyebrow">A SMALL NOTE</span><p id="event-note">Our ceremony will be outdoors. Please arrive 20 minutes early.</p></div></div>
+    </section>
+
+    <section class="gallery-section section-pad" id="gallery">
+      <div class="gallery-heading reveal"><div><p class="eyebrow">FRAMES FROM OUR STORY</p><h2>A few favorite <em>chapters.</em></h2></div><span class="gallery-heading__count" id="gallery-count">01 — 06</span></div>
+      <div class="gallery-grid" id="gallery-grid" aria-label="Photo gallery"></div>
+    </section>
+
+    <section class="rsvp-section" id="rsvp">
+      <div class="rsvp-section__photo" role="img" aria-label="A romantic table set for a wedding celebration"></div>
+      <div class="rsvp-section__panel">
+        <p class="eyebrow reveal">KINDLY REPLY BY <span id="rsvp-deadline">15 May 2027</span></p>
+        <h2 class="reveal">Will you join <em>us?</em></h2>
+        <p class="rsvp-intro reveal" id="rsvp-intro">We hope to celebrate with you. Please let us know by the date above.</p>
+        <div class="setup-notice" id="rsvp-setup" role="status" hidden><strong>RSVP is not connected yet.</strong><span>The couple needs to configure the private response database before replies can be accepted. Please contact them directly to respond for now.</span></div>
+        <form class="rsvp-form" id="rsvp-form" novalidate>
+          <div class="form-row"><label for="guest-name">Your full name <span aria-hidden="true">*</span></label><input id="guest-name" name="fullName" autocomplete="name" maxlength="120" required><p class="field-error" id="name-error"></p></div>
+          <div class="form-row"><label for="guest-email">Email address <span class="optional">OPTIONAL</span></label><input id="guest-email" type="email" name="email" autocomplete="email" maxlength="254"><p class="field-error" id="email-error"></p></div>
+          <fieldset class="form-row attendance-field"><legend>Will you be joining us? <span aria-hidden="true">*</span></legend><label class="radio-choice"><input type="radio" name="attendance" value="yes" required><span>Joyfully accepts</span></label><label class="radio-choice"><input type="radio" name="attendance" value="no" required><span>Regretfully declines</span></label><p class="field-error" id="attendance-error"></p></fieldset>
+          <div class="form-row guest-count-row" id="guest-count-row"><label for="guest-count">Number of guests <span aria-hidden="true">*</span></label><select id="guest-count" name="guestCount" required></select><small id="guest-limit-note">Please respond for the number of guests on your invitation.</small><p class="field-error" id="guest-count-error"></p></div>
+          <div class="form-row"><label for="dietary">Dietary requirements <span class="optional">OPTIONAL</span></label><input id="dietary" name="dietary" maxlength="500" placeholder="Let us know how we can take care of you"></div>
+          <div class="form-row"><label for="guest-message">A note for the couple <span class="optional">OPTIONAL</span></label><textarea id="guest-message" name="message" rows="3" maxlength="1000" placeholder="Anything you'd like to share"></textarea></div>
+          <div class="honeypot" aria-hidden="true"><label for="website">Leave this field blank</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          <button class="button button--dark" id="rsvp-submit" type="submit">Send your reply <span aria-hidden="true">↗</span></button>
+          <p class="privacy-note">Your reply is private and will only be seen by the couple.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="eyebrow">WITH LOVE, ALWAYS</p><p class="footer__names" id="footer-names">Rosine <span>&</span> Leonard</p>
+    <p class="footer__date" id="footer-date">12 June 2027 · Kigali, Rwanda</p>
+    <p class="footer__closing" id="closing-message">We can't wait to celebrate with you.</p>
+    <div class="footer__bottom"><span>MADE WITH LOVE</span><span id="footer-year">KIGALI · RWANDA</span></div>
+  </footer>
+
+  <button class="music-control" id="music-control" type="button" aria-label="Play wedding music" aria-pressed="false" hidden><span class="music-control__icon" aria-hidden="true">♫</span><span class="music-control__label" id="music-label">Play our song</span><span class="music-control__state" aria-hidden="true">▶</span></button>
+  <audio id="background-audio" loop preload="none"></audio>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer"><button class="lightbox__close" id="lightbox-close" type="button" aria-label="Close photo viewer">×</button><button class="lightbox__nav lightbox__prev" id="lightbox-prev" type="button" aria-label="Previous photo">←</button><figure class="lightbox__figure"><img id="lightbox-image" alt=""><figcaption id="lightbox-caption"></figcaption></figure><button class="lightbox__nav lightbox__next" id="lightbox-next" type="button" aria-label="Next photo">→</button><span class="lightbox__index" id="lightbox-index"></span></dialog>
+</body>
+</html>
